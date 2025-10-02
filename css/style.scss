@@ -1,6 +1,8 @@
 $blueColor: #1051b4;
 
-@import "header", "hero-section";
+@use "header";
+@use "hero-section";
+@use "about-company";
 
 @font-face {
   font-family: "Manrope-bold";
@@ -26,16 +28,77 @@ body {
   background-color: #121212;
 }
 
+h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+section {
+  padding: 0 5vw;
+}
+
 .blue-button {
   color: #fff;
   background-color: $blueColor;
   padding: 0.8rem 2.5rem;
   border-radius: 0.8rem;
   font-family: "Manrope-light";
+  transition: 0.4s;
+  border: 1px solid $blueColor;
+}
+
+.blue-button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.link {
+  color: #fff;
+  font-family: "Manrope-regular";
+  font-size: 1.01rem;
+  border: 1px solid #fff;
+  padding: 0.4rem 0.8rem;
+  position: relative;
+  padding-right: 2rem;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.link:hover {
+  background-color: $blueColor;
+  border: 1px solid $blueColor;
+  box-shadow: 0 0 30px 1px $blueColor;
+  padding: 0.4rem 2rem;
+  padding-right: 4rem;
+}
+
+.link:hover::after {
+  right: 15%;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  background-image: url("../assets/icons/Vector 2.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
+  // background-color: red;
+  top: 60%;
+  right: 3%;
+  transform: translateY(-50%);
+  transition: 0.5s;
 }
 
 @media (max-width: 1200px) {
   .blue-button {
     padding: 0.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  h2{
+    font-size: 1.5rem;
   }
 }
