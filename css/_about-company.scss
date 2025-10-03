@@ -155,6 +155,10 @@ p.four-item {
   }
 }
 
+img.services__item_svg{
+  color: red;
+}
+
 @media (max-width: 1250px) {
   .about-company__images {
     display: none;

@@ -246,6 +246,10 @@ p.four-item {
     padding-top: 30vh;
   }
 }
+img.services__item_svg {
+  color: red;
+}
+
 @media (max-width: 1250px) {
   .about-company__images {
     display: none;
@@ -269,6 +273,190 @@ p.four-item {
 @media (max-width: 700px) {
   .about-company__text p {
     font-size: 1rem;
+  }
+}
+.services {
+  padding-bottom: 20vh;
+}
+
+.services__list {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  gap: 2.5rem 1rem;
+}
+
+.services__title {
+  margin-bottom: 10vh;
+}
+
+.services__item_title {
+  color: #fff;
+  font-family: "Manrope-light";
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+
+.services__item_text {
+  color: #fff;
+  font-family: "Manrope-light";
+  font-size: 1rem;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+}
+.services__item img {
+  align-self: flex-end;
+  margin-top: 100px;
+}
+
+@media (max-width: 1300px) {
+  .services__list {
+    grid-template: auto/repeat(2, 1fr);
+  }
+  .services__list .services__item_svg {
+    width: 200px;
+  }
+  .services__item_title {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 750px) {
+  .services__list {
+    grid-template: auto/1fr;
+  }
+}
+.cases {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+  padding-bottom: 40vh;
+}
+.cases .link {
+  align-self: flex-end;
+}
+
+.cases__portfolio {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.cases__portfolio img {
+  position: absolute;
+  z-index: -100;
+  top: -90px;
+  right: -200px;
+}
+.cases__portfolio .cases__item {
+  background: linear-gradient(90deg, #1051b4, rgba(67, 172, 251, 0.4));
+  min-width: 555px;
+  height: 350px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.cases__portfolio .cases__item .cases__item_title {
+  color: #fff;
+  font-family: "Manrope-light";
+  border-bottom: 1px solid #fff;
+  width: 50%;
+  padding-bottom: 5px;
+}
+.cases__portfolio .cases__item:nth-of-type(1) {
+  background: linear-gradient(90deg, #1051b4, rgba(67, 172, 251, 0.4)), url("../assets/images/Rectangle 356.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cases__portfolio .cases__item:nth-of-type(2) {
+  background: linear-gradient(90deg, #1051b4, rgba(67, 172, 251, 0.4)), url("../assets/images/0f1a2136bb92b3a6851e72657ca6b424c86b9c15.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cases__portfolio .cases__item:nth-of-type(3) {
+  background: linear-gradient(90deg, #1051b4, rgba(67, 172, 251, 0.4)), url("../assets/images/0168b4c4fc9c96ddb27923bc94e0c58202c6d2d7.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cases__advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  position: relative;
+}
+.cases__advantages img {
+  position: absolute;
+  top: -170px;
+  left: -8%;
+  z-index: -100;
+}
+.cases__advantages .cases__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+}
+.cases__advantages .cases__item .cases__item_title {
+  font-family: "Manrope-bold";
+  font-size: 1.6rem;
+  text-align: center;
+}
+.cases__advantages .cases__item .cases__item_subtitle {
+  font-family: "Manrope-light";
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .cases__advantages .cases__item .cases__item_title {
+    font-size: 1.4rem;
+  }
+  .cases__advantages .cases__item .cases__item_subtitle {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1260px) {
+  .cases__portfolio img {
+    top: 60%;
+    right: 0;
+    width: 600px;
+  }
+}
+@media (max-width: 950px) {
+  .cases__advantages {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cases__advantages .cases__item {
+    gap: 0px;
+  }
+  .cases__advantages img {
+    top: -20px;
+    width: 500px;
+  }
+}
+@media (max-width: 650px) {
+  .cases__portfolio .cases__item {
+    min-width: 90%;
+  }
+  .cases__portfolio img {
+    top: 70%;
+    right: 0;
+    width: 500px;
+  }
+}
+@media (max-width: 450px) {
+  .cases__advantages img {
+    top: 50px;
   }
 }
 @font-face {

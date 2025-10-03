@@ -1,0 +1,56 @@
+.services{
+  padding-bottom: 20vh;
+}
+
+.services__list {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 2.5rem 1rem;
+}
+
+.services__title {
+  margin-bottom: 10vh;
+}
+
+.services__item_title {
+  color: #fff;
+  font-family: "Manrope-light";
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+
+.services__item_text {
+  color: #fff;
+  font-family: "Manrope-light";
+  font-size: 1rem;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    align-self: flex-end;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .services__list {
+    grid-template: auto / repeat(2, 1fr);
+
+    .services__item_svg {
+      width: 200px;
+    }
+  }
+
+  .services__item_title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 750px) {
+    .services__list{
+        grid-template: auto / 1fr;
+    }
+}
