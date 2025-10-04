@@ -53,7 +53,7 @@
   left: 100%;
   background-color: #121212;
   height: 100vh;
-  display: block;
+  display: none;
   width: 100%;
   transition: 0.8s ease-in-out;
   z-index: 999;
@@ -545,10 +545,13 @@ img.services__item_svg {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #121212;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 h2 {
@@ -558,6 +561,7 @@ h2 {
 
 section {
   padding: 0 5vw;
+  width: 100%;
 }
 
 .blue-button {

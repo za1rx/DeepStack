@@ -4,7 +4,7 @@
   left: 100%;
   background-color: #121212;
   height: 100vh;
-  display: block;
+  display: none;
   width: 100%;
   transition: 0.8s ease-in-out;
   z-index: 999;
@@ -71,3 +71,9 @@
   display: flex;
   gap: 1rem;
 }
+
+// @media (max-width: 900px) {
+//   .burger-menu{
+//     display: block;
+//   }
+// }
