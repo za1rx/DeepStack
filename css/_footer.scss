@@ -1,0 +1,69 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vw;
+  gap: 1rem;
+
+  div {
+    color: #fff;
+    h3 {
+      font-family: "Manrope-bold";
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+    li a {
+      color: #fff;
+      font-family: "Manrope-light";
+      transition: 0.5s;
+
+      &:hover {
+        color: #1051b4;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}
+
+.footer__logo {
+  img {
+    margin-bottom: 2vh;
+  }
+
+  p {
+    color: #fff;
+    font-family: "manrope-light";
+  }
+}
+
+.footer__interesting button {
+  margin-top: 35px;
+}
+
+@media (max-width: 1500px) {
+  .footer div {
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    ul li a{
+        font-size: .9rem;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+    .footer__interesting button{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .footer{
+        flex-direction: column;
+    }
+}

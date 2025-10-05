@@ -852,6 +852,64 @@ img.services__item_svg {
     font-size: 0.8rem;
   }
 }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vw;
+  gap: 1rem;
+}
+.footer div {
+  color: #fff;
+}
+.footer div h3 {
+  font-family: "Manrope-bold";
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.footer div li a {
+  color: #fff;
+  font-family: "Manrope-light";
+  transition: 0.5s;
+}
+.footer div li a:hover {
+  color: #1051b4;
+}
+.footer div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__logo img {
+  margin-bottom: 2vh;
+}
+.footer__logo p {
+  color: #fff;
+  font-family: "manrope-light";
+}
+
+.footer__interesting button {
+  margin-top: 35px;
+}
+
+@media (max-width: 1500px) {
+  .footer div h3 {
+    font-size: 1.1rem;
+  }
+  .footer div ul li a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1080px) {
+  .footer__interesting button {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 850px) {
+  .footer {
+    flex-direction: column;
+  }
+}
 @font-face {
   font-family: "Manrope-bold";
   src: url("../assets/font/Manrope-Bold.woff");
