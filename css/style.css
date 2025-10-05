@@ -518,6 +518,10 @@ img.services__item_svg {
 @media (max-width: 650px) {
   .cases__portfolio .cases__item {
     min-width: 90%;
+    height: 200px;
+  }
+  .cases__portfolio .cases__item h3 {
+    font-size: 0.9rem;
   }
   .cases__portfolio img {
     top: 70%;
@@ -528,6 +532,324 @@ img.services__item_svg {
 @media (max-width: 450px) {
   .cases__advantages img {
     top: 50px;
+  }
+  .cases {
+    padding-bottom: 32vh;
+  }
+}
+.doubts {
+  padding-top: 15vh;
+}
+
+.doubts__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doubts__text-content {
+  align-self: flex-start;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.doubts__text-content .doubts__subtitle,
+.doubts__text-content .doubts__count-minutes {
+  color: #fff;
+  font-family: "Manrope-light";
+}
+.doubts__text-content .doubts__subtitle {
+  font-size: 1.1rem;
+}
+.doubts__text-content .doubts__count-minutes {
+  font-size: 2rem;
+}
+.doubts__text-content .doubts__info {
+  display: none;
+}
+
+.doubts__info {
+  width: 47%;
+  display: flex;
+  align-items: end;
+  gap: 1.2rem;
+}
+.doubts__info p {
+  color: #fff;
+  font-family: "manrope-light";
+  font-size: 1rem;
+}
+
+@media (max-width: 1400px) {
+  .doubts__info {
+    width: 55%;
+  }
+  .doubts__info p {
+    font-size: 0.9rem;
+  }
+  .doubts__content .doubts__count-minutes {
+    font-size: 1.5rem;
+  }
+  .doubts__content .doubts__subtitle {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .doubts__text-content {
+    width: 100%;
+    gap: 1rem;
+  }
+  .doubts__text-content .doubts__info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    width: 100%;
+  }
+  .doubts__text-content .doubts__info img {
+    width: 250px;
+  }
+  .doubts__info {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .doubts {
+    padding-top: 0;
+  }
+  .doubts__text-content .doubts__info img {
+    width: 80%;
+  }
+}
+.reviews {
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 15vh;
+  overflow-y: visible;
+  position: relative;
+}
+
+.swiper {
+  width: 80%;
+  height: 520px;
+  margin-top: 20px;
+}
+
+.swiper-pagination {
+  bottom: -2vh;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  transition: 0.5s;
+  margin: 0 0.5rem !important;
+}
+
+.swiper-pagination-bullet::before {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: block;
+  border: 1px solid #1051b4;
+  border-radius: 50%;
+  content: "";
+  height: 10px;
+  width: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1051b4;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active::before {
+  display: none;
+}
+
+.swiper-slide {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  cursor: pointer;
+}
+
+.reviews__subtitle {
+  color: #fff;
+  font-family: "Manrope-light";
+}
+
+.reviews__bg-image {
+  position: absolute;
+  right: 0;
+  top: 15vh;
+}
+
+@media (max-width: 750px) {
+  .swiper {
+    width: 60%;
+  }
+  .reviews__bg-image {
+    top: 50vh;
+  }
+}
+@media (max-width: 530px) {
+  .swiper {
+    width: 80%;
+  }
+}
+@media (max-width: 360px) {
+  .swiper {
+    width: 100%;
+  }
+}
+.our-insites {
+  padding-top: 10vh;
+}
+
+.our-insites__list {
+  display: flex;
+  justify-content: center;
+  gap: 150px 80px;
+  flex-wrap: wrap;
+}
+.our-insites__list .our-insites__item {
+  width: 500px;
+  height: 380px;
+  font-family: "manrope-light";
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.our-insites__list .our-insites__item img {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: -2vw;
+  transition: 0.5s;
+}
+.our-insites__list .our-insites__item img:first-of-type {
+  opacity: 0;
+}
+.our-insites__list .our-insites__item img:last-of-type {
+  opacity: 1;
+}
+.our-insites__list .our-insites__item:hover img:last-of-type {
+  opacity: 0;
+}
+.our-insites__list .our-insites__item:hover img:first-of-type {
+  opacity: 1;
+}
+
+.our-insites__title {
+  margin-bottom: 80px;
+}
+
+.our-insites__item__title {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1300px) {
+  .our-insites__item__title {
+    font-size: 1.1rem;
+  }
+  .our-insites__item__text {
+    font-size: 0.9rem;
+  }
+}
+.faq__accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.faq__title {
+  margin-bottom: 30px;
+}
+
+.faq__item {
+  color: #fff;
+  font-family: "Manrope-light";
+  cursor: pointer;
+}
+.faq__item .faq__item_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #fff;
+}
+.faq__item .faq__item_header h3 {
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  transition: 0.5s;
+}
+.faq__item .faq__item_header .faq__item_button {
+  min-width: 15px;
+  height: 15px;
+  transition: 0.5s;
+}
+.faq__item .faq__item_header .faq__item_button span {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.faq__item .faq__item_header .faq__item_button span:last-of-type {
+  transform: rotate(90deg);
+}
+.faq__item .faq__item_content {
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.faq__item .faq__item_content p {
+  font-size: 1rem;
+}
+
+.faq__item--active .faq__item_header .faq__item_button {
+  transform: rotate(-45deg);
+}
+.faq__item--active .faq__item_header .faq__item_button span {
+  background-color: #1051b4;
+}
+.faq__item--active .faq__item_header h3 {
+  color: #1051b4;
+}
+.faq__item--active .faq__item_content {
+  margin-top: 20px;
+}
+
+@media (max-width: 1400px) {
+  .faq__item .faq__item_header h3 {
+    font-size: 1rem;
+  }
+  .faq__item .faq__item_content p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 500px) {
+  .faq__item .faq__item_header h3 {
+    font-size: 0.9rem;
+  }
+  .faq__item .faq__item_content p {
+    font-size: 0.8rem;
   }
 }
 @font-face {

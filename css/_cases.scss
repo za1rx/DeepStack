@@ -140,6 +140,11 @@
 @media (max-width: 650px) {
   .cases__portfolio .cases__item {
     min-width: 90%;
+    height: 200px;
+
+    h3{
+      font-size: .9rem;
+    }
   }
 
   .cases__portfolio img {
@@ -152,5 +157,9 @@
 @media (max-width: 450px) {
     .cases__advantages img{
         top: 50px;
+    }
+
+    .cases{
+      padding-bottom: 32vh;
     }
 }

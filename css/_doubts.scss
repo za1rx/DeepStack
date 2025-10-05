@@ -1,0 +1,98 @@
+.doubts {
+  padding-top: 15vh;
+}
+
+.doubts__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doubts__text-content {
+  align-self: flex-start;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+
+  .doubts__subtitle,
+  .doubts__count-minutes {
+    color: #fff;
+    font-family: "Manrope-light";
+  }
+
+  .doubts__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .doubts__count-minutes {
+    font-size: 2rem;
+  }
+
+  .doubts__info {
+    display: none;
+  }
+}
+
+.doubts__info {
+  width: 47%;
+  display: flex;
+  align-items: end;
+  gap: 1.2rem;
+
+  p {
+    color: #fff;
+    font-family: "manrope-light";
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .doubts__info {
+    width: 55%;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .doubts__content {
+    .doubts__count-minutes {
+      font-size: 1.5rem;
+    }
+
+    .doubts__subtitle {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+    .doubts__text-content{
+        width: 100%;
+        gap: 1rem;
+
+        .doubts__info{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: start;
+            width: 100%;
+
+            img{
+                width: 250px;
+            }
+        }
+    }
+
+    .doubts__info{
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .doubts{
+        padding-top: 0;
+    }
+    .doubts__text-content .doubts__info img{
+        width: 80%;
+    }
+}
